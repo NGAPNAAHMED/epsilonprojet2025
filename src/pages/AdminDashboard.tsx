@@ -89,17 +89,13 @@ const AdminDashboard = () => {
             <Users className="h-5 w-5" />
             Clients
           </button>
-          <button
-            onClick={() => setActiveTab("dossiers")}
-            className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
-              activeTab === "dossiers"
-                ? "bg-primary text-primary-foreground"
-                : "hover:bg-muted"
-            }`}
+          <Link
+            to="/dossiers"
+            className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted transition-colors"
           >
             <FolderOpen className="h-5 w-5" />
-            Dossiers
-          </button>
+            Mes Dossiers
+          </Link>
           <button
             onClick={() => setActiveTab("documents")}
             className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg transition-colors ${
